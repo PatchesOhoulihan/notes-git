@@ -5,28 +5,33 @@
     <title>Git Stuff</title>
 </head>
 <body>
-    
+
     <!-- header>ul.top-nav>li*5>a[href="#"] -->
     <header>
         <ul class="top-nav">
             <li><a href="#">Initialisieren</a></li>
-            <li><a href="#">Architektur</a></li>
-            <li><a href="#">Branches</a></li>
-            <li><a href="#">Remote</a></li>
+            <li><a href="#">Täglicher workflow</a></li>
+            <li><a href="#">Github</a></li>
             <li><a href="#">Referenz</a></li>
         </ul>
     </header>
     <main>
         <section>
+          <article>
+            <h2>git clone</h2>
+            <code>
+              <p>With git clone it's possible to duplicate either a remote or local repository</p>
+              <p>Syntax: git clone URL</p>
+              <p>EX: git clone https://github.com/PatchesOhoulihan/webdevelopment-skeleton.git</p></code>
+          </article>
             <article>
                 <h2>git Remote</h2>
-                
                 <code>
                     <p>Syntax: git remote</p>
                     <p>git remote without parameter is used to show the name of the remote repository of your local repository.</p>
                     <p>git remote -v for more output(The complete URL), use the -v Flag.</p>
                 </code>
-                   
+
                     <p>git remote add <name> <url></p>
                     <p>is used to add a remote repository. If you don't have remote repository ist common to name it origin</p>
                 <code>
@@ -38,7 +43,8 @@
                 <code>
                     <p>Use git remote push</p>
                     <code>
-                        <p>Syntax: git remote push <reponame> <branchname></p>
+                        <p>Copy your local repository to a remote one</p>
+                        <p>Syntax: git remote push "reponame" "branchname"</p>
                         <p>EX: git remote push origin master</p>
                     </code>
                 </code>
@@ -46,7 +52,9 @@
             <article>
                 <h2>git pull</h2>
                 <code>
-                    <p>Get a repo from a remote Repository</p>
+                    <p>Syncronize the local repository with the the remote repository</p>
+                    <p>Syntax: git pull 'repoURL' 'branchname'</p>
+                    <p>EX: git pull origin master</p>
                 </code>
             </article>
         </section>
@@ -60,6 +68,6 @@
             <li><a href="#"></a></li>
         </ul>
     </footer>
-        
+
 </body>
 </html>
